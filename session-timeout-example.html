@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- use chrome frame if installed -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Session Timeout Example | jQuery Plugin</title>
+  <meta name="description" content="jQuery Session Timeout Plugin">
+  <meta name="author" content="Cory Dorning">
+
+  <!-- Mobile viewport optimization -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- stylesheets -->
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/black-tie/jquery-ui.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <header role="banner">
+
+    <h1>jQuery Session Timeout Plugin</h1>
+
+  </header>
+  <!-- @banner -->
+
+
+  <div role="main">
+
+    <!-- content -->
+    <p>This is a jQuery Plugin that prompts the user with a modal dialog, which enables them to keep their session from timing out. In 20 seconds, you will be prompted to stay logged in.</p>
+
+  </div>
+  <!-- @main -->
+
+
+  <footer role="contentinfo">
+
+    <p>Authored By: Cory Dorning</p>
+
+  </footer>
+  <!-- @contentinfo -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Libraries -->
+  <!-- jQuery(UI): Google CDN w/ protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+  <!-- Site/App Scripts: concat and minify for prod -->
+  <script src="jquery-session-timeout.js"></script>
+
+  <script>
+
+    // doc ready
+    (function($){
+
+      // call session timeout
+      $.sessionTimeout({
+        countdown: 15,
+        keepAliveURL: '/portal/img/keepalive.gif?reset',
+        logoutURL: '/portal/logout',
+        timeout: 20
+      });
+
+    })(jQuery);
+
+  </script>
+
+  <!-- end scripts -->
+
+</body>
+</html>

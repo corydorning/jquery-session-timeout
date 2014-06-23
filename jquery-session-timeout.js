@@ -1,4 +1,4 @@
-/* jquery-session-timeout-0.3.js
+/*! jquery-session-timeout-0.3.js
  *
  * Authored by: Cory Dorning
  * Website: http://corydorning.com/projects/jquery-session-timeout

@@ -1,0 +1,22 @@
+{
+  "name": "jquery-session-timeout",
+  "main": "jquery-session-timeout.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/corydorning/jquery-session-timeout",
+  "authors": [
+    "Cory Dorning <cory@dorning.me>"
+  ],
+  "description": "The jQuery Session Timeout plugin provides the end-user with a modal dialog when their session is about to expire and allows them to logout or keep their session alive.",
+  "keywords": [
+    "jquery",
+    "session timeout"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
